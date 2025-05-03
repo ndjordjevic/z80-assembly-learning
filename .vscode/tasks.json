@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make (sjasmplus) - 8-bit Load",
+            "type": "shell",
+            "command": "sjasmplus",
+            "args": [
+                "--raw=${workspaceFolder}/8bit-load.obj",
+                "--sld=${workspaceFolder}/8bit-load.sld",
+                "--fullpath",
+                "${workspaceFolder}/8bit-load.asm"
+            ],
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "make (sjasmplus) - 16-bit Load",
+            "type": "shell",
+            "command": "sjasmplus",
+            "args": [
+                "--raw=${workspaceFolder}/16bit-load.obj",
+                "--sld=${workspaceFolder}/16bit-load.sld",
+                "--fullpath",
+                "${workspaceFolder}/16bit-load.asm"
+            ],
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        }
+    ]
+}

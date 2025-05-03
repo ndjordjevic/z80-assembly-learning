@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 8-bit Load Instructions",
+            "remoteType": "zsim",
+            // "zsim": {
+            //     "zxKeyboard": null,
+            // },
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/8bit-load.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "8bit-load.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - 8-bit Load"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 16-bit Load Instructions",
+            "remoteType": "zsim",
+            // "zsim": {
+            //     "zxKeyboard": null,
+            // },
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/16bit-load.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "16bit-load.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - 16-bit Load"
+        }
+    ]
+}
