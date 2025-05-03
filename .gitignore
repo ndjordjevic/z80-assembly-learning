@@ -1,4 +1,4 @@
 /.tmp
-/learning.obj
-/learning.sld
+*.obj
+*.sld
 /z80-assembly-learning.code-workspace
