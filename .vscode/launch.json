@@ -11,11 +11,11 @@
             // },
             "sjasmplus": [
                 {
-                    "path": "${workspaceFolder}/8bit-load.sld"
+                    "path": "${workspaceFolder}/build/8bit-load.sld"
                 }
             ],
             "loadObjs": [
-                { "path": "8bit-load.obj", "start": "0x0000" },
+                { "path": "build/8bit-load.obj", "start": "0x0000" },
             ],
             "execAddress": "0x0000",
             "startAutomatically": false,
@@ -33,17 +33,36 @@
             // },
             "sjasmplus": [
                 {
-                    "path": "${workspaceFolder}/16bit-load.sld"
+                    "path": "${workspaceFolder}/build/16bit-load.sld"
                 }
             ],
             "loadObjs": [
-                { "path": "16bit-load.obj", "start": "0x0000" },
+                { "path": "build/16bit-load.obj", "start": "0x0000" },
             ],
             "execAddress": "0x0000",
             "startAutomatically": false,
             "rootFolder": "${workspaceFolder}",
             "topOfStack": "stack_top",
             "preLaunchTask": "make (sjasmplus) - 16-bit Load"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 Exchange/Block Transfer/Search Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/exchage-block_transfer-search.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/exchage-block_transfer-search.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - Exchange/Block Transfer/Search"
         }
     ]
 }
