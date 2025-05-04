@@ -63,6 +63,158 @@
             "rootFolder": "${workspaceFolder}",
             "topOfStack": "stack_top",
             "preLaunchTask": "make (sjasmplus) - Exchange/Block Transfer/Search"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 8-bit Arithmetic Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/8bit-arithmetic.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/8bit-arithmetic.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - 8-bit Arithmetic"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 General-Purpose Arithmetic and CPU Control",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/gp-arithmetic-cpu-control.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/gp-arithmetic-cpu-control.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - GP Arithmetic and CPU Control"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 16-bit Arithmetic Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/16bit-arithmetic.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/16bit-arithmetic.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - 16-bit Arithmetic"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 Rotate and Shift Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/rotate-and-shift.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/rotate-and-shift.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - Rotate and Shift"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 Bit Manipulation Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/bit-manipulation.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/bit-manipulation.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - Bit Manipulation"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 Jump Group Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/jump.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/jump.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - Jump"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 Call and Return Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/call-return.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/call-return.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - Call and Return"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Z80 Input and Output Instructions",
+            "remoteType": "zsim",
+            "sjasmplus": [
+                {
+                    "path": "${workspaceFolder}/build/input-output.sld"
+                }
+            ],
+            "loadObjs": [
+                { "path": "build/input-output.obj", "start": "0x0000" },
+            ],
+            "execAddress": "0x0000",
+            "startAutomatically": false,
+            "rootFolder": "${workspaceFolder}",
+            "topOfStack": "stack_top",
+            "preLaunchTask": "make (sjasmplus) - Input and Output"
         }
     ]
 }

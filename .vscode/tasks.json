@@ -54,6 +54,142 @@
                 }
             },
             "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - 8-bit Arithmetic",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/8bit-arithmetic.obj --sld=${workspaceFolder}/build/8bit-arithmetic.sld --fullpath ${workspaceFolder}/8bit-arithmetic.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - GP Arithmetic and CPU Control",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/gp-arithmetic-cpu-control.obj --sld=${workspaceFolder}/build/gp-arithmetic-cpu-control.sld --fullpath ${workspaceFolder}/gp-arithmetic-cpu-control.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - 16-bit Arithmetic",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/16bit-arithmetic.obj --sld=${workspaceFolder}/build/16bit-arithmetic.sld --fullpath ${workspaceFolder}/16bit-arithmetic.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - Rotate and Shift",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/rotate-and-shift.obj --sld=${workspaceFolder}/build/rotate-and-shift.sld --fullpath ${workspaceFolder}/rotate-and-shift.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - Bit Manipulation",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/bit-manipulation.obj --sld=${workspaceFolder}/build/bit-manipulation.sld --fullpath ${workspaceFolder}/bit-manipulation.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - Jump",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/jump.obj --sld=${workspaceFolder}/build/jump.sld --fullpath ${workspaceFolder}/jump.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - Call and Return",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/call-return.obj --sld=${workspaceFolder}/build/call-return.sld --fullpath ${workspaceFolder}/call-return.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "make (sjasmplus) - Input and Output",
+            "type": "shell",
+            "command": "mkdir -p build && sjasmplus --raw=${workspaceFolder}/build/input-output.obj --sld=${workspaceFolder}/build/input-output.sld --fullpath ${workspaceFolder}/input-output.asm",
+            "problemMatcher": {
+                "owner": "sjasmplus",
+                "fileLocation": "autoDetect",
+                "pattern": {
+                    "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "group": "build"
         }
     ]
 }
